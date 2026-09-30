@@ -12,6 +12,7 @@ class Mahasiswa {
         echo "Prodi : " . $this->prodi . "<br>";
     }
 }
+
 $mhs1=new Mahasiswa(
     "Charis", "Teknik Informatika"
 );
