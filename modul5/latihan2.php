@@ -18,6 +18,6 @@ $mhs1 = new Mahasiswa();
 
 $mhs1->setNama("Andi");
 
-echo "Nama Mahasiswa: " . $mhs1->getNama();
+echo "Nama: Moh Charis" . $mhs1->getNama();
 
 ?>
