@@ -1,5 +1,6 @@
 <?php
 class Produk {
+    
     public $kode, $nama, $harga, $stok, $diskon;
 
     public function __construct($kode, $nama, $harga, $stok, $diskon = 0) {
