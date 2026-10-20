@@ -15,7 +15,6 @@ class Mahasiswa {
         $this->semester = $semester;
     }
 
-    // Setter dengan validasi: nilai harus 0 - 100
     public function setNilai($nilai) {
         if ($nilai >= 0 && $nilai <= 100) {
             $this->nilai = $nilai;
@@ -44,7 +43,7 @@ class Mahasiswa {
         return $this->nilai;
     }
 
-    // Menentukan grade berdasarkan nilai
+    //grade nilai
     public function tentukanGrade() {
         if ($this->nilai === null) {
             return "-";
@@ -79,7 +78,7 @@ echo "Nama: " . $mhs1->getNama() . "<br>";
 echo "Prodi: " . $mhs1->getProdi() . "<br>";
 echo "Semester: " . $mhs1->getSemester() . "<br>";
 echo "Nilai: " . $mhs1->getNilai() . "<br>";
-echo "Grade: " . $mhs1->tentukanGrade() . "<br><br>";
+echo "Grade: " . $mhs1->tentukanGrade();
 
 // // Uji nilai di luar rentang
 // $mhs2 = new Mahasiswa("2301002", "Budi", "Sistem Informasi", 3);
